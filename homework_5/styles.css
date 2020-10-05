@@ -10,11 +10,19 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
 body {
 	font-family: 'Quicksand', sans-serif;
+	background-image: url("images/home-bg.jpg");
+	background-size: cover;
 }
+
+/* ************* HEADINGS ************* */
 
 h3 {
 	font-size: 36px;
+	font-weight: 400;
 }
+
+/* ************* HEADINGS ************* */
+/* ************* HEADER ************* */
 
 .blue-header {
 	width: 100%;
@@ -29,3 +37,54 @@ h3 {
 .blue-header h3 {
 	padding-right: 50px;
 }
+
+nav img {
+	max-width: 230px;
+}
+
+nav {
+	width: 95%;
+	height: 200px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav-container {
+	padding: 20px 50px;
+}
+
+.nav-container ul {
+	display: flex;
+	margin-right: 75px;
+}
+
+.nav-container ul li {
+	list-style-type: none;
+	padding-left: 75px;
+}
+
+.nav-container ul li a {
+	color: #f8f8f8;
+	text-decoration: none;
+}
+
+.cart-container {
+	position: absolute;
+	right: 50px;
+	top: 115px;
+}
+
+.cart-container img {
+	max-width: 60px;
+}
+
+/* ************* HEADER ************* */
+/* ************* FOOTER ************* */
+
+.social-icons img {
+	max-width: 35px;
+}
+
+/* ************* FOOTER ************* */

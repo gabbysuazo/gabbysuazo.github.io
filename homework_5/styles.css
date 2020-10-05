@@ -54,6 +54,11 @@ a {
 	color: #f8f8f8;
 }
 
+.blue-header a:hover {
+	color: #0d3549;
+	transition: .15s all;
+}
+
 .blue-header h3 {
 	padding-right: 50px;
 }
@@ -89,6 +94,11 @@ nav {
 	color: #f8f8f8;
 }
 
+.nav-container ul li a:hover {
+	color: #0d3549;
+	transition: .15s all;
+}
+
 .cart-container {
 	position: absolute;
 	right: 50px;
@@ -97,6 +107,11 @@ nav {
 
 .cart-container img {
 	max-width: 60px;
+}
+
+.cart-container:hover {
+	filter: brightness(0) saturate(100%) invert(59%) sepia(14%) saturate(807%) hue-rotate(161deg) brightness(89%) contrast(89%);
+	transition: .15s all;
 }
 
 /* ************* HEADER ************* */
@@ -124,6 +139,11 @@ nav {
 	color: #f8f8f8;
 }
 
+.home-container a:hover {
+	color: #0d3549;
+	transition: .15s all;
+}
+
 /* ************* MAIN ************* */
 /* ************* FOOTER ************* */
 
@@ -147,12 +167,22 @@ footer a {
 	color: #f8f8f8;
 }
 
+footer a:hover {
+	color: #0d3549;
+	transition: .15s all;
+}
+
 .social-icons {
 	margin-top: 10px;
 }
 
 .social-icons img {
 	max-width: 35px;
+}
+
+.social-icons img:hover {
+	filter: brightness(0) saturate(100%) invert(16%) sepia(87%) saturate(434%) hue-rotate(155deg) brightness(89%) contrast(98%);
+	transition: .15s all;
 }
 
 /* ************* FOOTER ************* */

@@ -11,3 +11,21 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 body {
 	font-family: 'Quicksand', sans-serif;
 }
+
+h3 {
+	font-size: 36px;
+}
+
+.blue-header {
+	width: 100%;
+	height: 70px;
+	background-color: #6A8DA5;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	color: #f8f8f8;
+}
+
+.blue-header h3 {
+	padding-right: 50px;
+}

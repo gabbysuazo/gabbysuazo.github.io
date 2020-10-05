@@ -10,11 +10,14 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
 body {
 	font-family: 'Quicksand', sans-serif;
-	background-image: url("images/home-bg.jpg");
-	background-size: cover;
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
+}
+
+.home-body {
+	background-image: url("images/home-bg.jpg");
+	background-size: cover;
 }
 
 main {
@@ -94,13 +97,21 @@ nav {
 	padding-left: 75px;
 }
 
-.nav-container ul li a {
+.nav-container-home ul li a {
 	color: #f8f8f8;
 }
 
-.nav-container ul li a:hover {
+.nav-container-pages ul li a {
+	color: #6A8DA5;
+}
+
+.nav-container-home ul li a:hover {
 	color: #0d3549;
 	transition: .15s all;
+}
+
+.nav-container-pages ul li a:hover {
+	color: #b57e59;
 }
 
 .cart-container {
@@ -118,37 +129,15 @@ nav {
 	transition: .15s all;
 }
 
+.cart-container-pages {
+	filter: brightness(0) saturate(100%) invert(51%) sepia(44%) saturate(281%) hue-rotate(161deg) brightness(96%) contrast(88%);
+}
+
+.cart-container-pages:hover {
+	filter: brightness(0) saturate(100%) invert(51%) sepia(47%) saturate(418%) hue-rotate(341deg) brightness(94%) contrast(86%);
+}
+
 /* ************* HEADER ************* */
-/* ************* MAIN ************* */
-
-.home-container {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	color: #f8f8f8;
-	position: absolute;
-	top: 40%;
-}
-
-.home-container h1 {
-	margin-bottom: 75px;
-}
-
-.home-container a {
-	background-color: #6A8DA5;
-	padding: 20px 35px;
-	border-radius: 100px;
-	color: #f8f8f8;
-}
-
-.home-container a:hover {
-	color: #0d3549;
-	transition: .15s all;
-}
-
-/* ************* MAIN ************* */
 /* ************* FOOTER ************* */
 
 footer {
@@ -190,3 +179,40 @@ footer a:hover {
 }
 
 /* ************* FOOTER ************* */
+/* ************* MAIN ************* */
+
+.home-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #f8f8f8;
+	position: absolute;
+	top: 40%;
+}
+
+.home-container h1 {
+	margin-bottom: 75px;
+}
+
+.home-container a {
+	background-color: #6A8DA5;
+	padding: 20px 35px;
+	border-radius: 100px;
+	color: #f8f8f8;
+}
+
+.home-container a:hover {
+	color: #0d3549;
+	transition: .15s all;
+}
+
+/* ************* PRODUCTS ************* */
+
+.products-container img {
+	max-width: 400px;
+}
+
+/* ************* PRODUCTS ************* */
+/* ************* MAIN ************* */

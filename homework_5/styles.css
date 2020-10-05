@@ -23,9 +23,18 @@ main {
 
 /* ************* HEADINGS ************* */
 
+h1 {
+	font-size: 54px;
+	font-weight: 400;
+}
+
 h3 {
 	font-size: 36px;
 	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
 }
 
 /* ************* HEADINGS ************* */
@@ -38,6 +47,10 @@ h3 {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
+	color: #f8f8f8;
+}
+
+.blue-header a {
 	color: #f8f8f8;
 }
 
@@ -74,7 +87,6 @@ nav {
 
 .nav-container ul li a {
 	color: #f8f8f8;
-	text-decoration: none;
 }
 
 .cart-container {
@@ -88,6 +100,31 @@ nav {
 }
 
 /* ************* HEADER ************* */
+/* ************* MAIN ************* */
+
+.home-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #f8f8f8;
+	position: absolute;
+	top: 40%;
+}
+
+.home-container h1 {
+	margin-bottom: 75px;
+}
+
+.home-container a {
+	background-color: #6A8DA5;
+	padding: 20px 35px;
+	border-radius: 100px;
+	color: #f8f8f8;
+}
+
+/* ************* MAIN ************* */
 /* ************* FOOTER ************* */
 
 footer {
@@ -107,7 +144,6 @@ footer div {
 }
 
 footer a {
-	text-decoration: none;
 	color: #f8f8f8;
 }
 

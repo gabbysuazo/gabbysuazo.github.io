@@ -63,7 +63,11 @@ a {
 	padding-right: 50px;
 }
 
-nav img {
+.logo-link {
+	width: 300px;
+}
+
+nav a img {
 	max-width: 230px;
 }
 

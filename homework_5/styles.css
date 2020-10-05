@@ -13,6 +13,7 @@ body {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
+	color: #6A8DA5;
 }
 
 .home-body {
@@ -31,8 +32,22 @@ h1 {
 	font-weight: 400;
 }
 
+h2 {
+	font-size: 54px;
+	padding-bottom: 50px;
+}
+
 h3 {
 	font-size: 36px;
+	font-weight: 400;
+}
+
+h4 {
+	font-size: 30px;
+	font-weight: 400;
+}
+
+h5 {
 	font-weight: 400;
 }
 
@@ -147,9 +162,16 @@ footer {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	font-size: 24px;
 	text-align: center;
 	color: #f8f8f8;
+}
+
+footer h4 {
+	font-size: 24px;
+}
+
+footer h5 {
+	font-size: 20px;
 }
 
 footer div {
@@ -210,8 +232,66 @@ footer a:hover {
 
 /* ************* PRODUCTS ************* */
 
+.product-page {
+	max-width: 1400px;
+	margin: auto;
+}
+
+.page-heading {
+	text-align: center;
+}
+
+.products-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .products-container img {
-	max-width: 400px;
+	max-width: 380px;
+}
+
+.bun-container {
+	width: 100%;
+	max-width: 1600px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.bun {
+	padding: 0 25px 50px 25px;
+}
+
+.bun-price {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #6A8DA5;
+}
+
+.bun-price h4 {
+	padding-top: 10px;
+}
+
+.bun-quantity {
+	display: flex;
+}
+
+.bun-quantity h3 {
+	padding: 0 15px;
+	font-size: 40px;
+}
+
+.bun-quantity img {
+	max-width: 25px;
+}
+
+.bun-quantity img:hover {
+	filter: brightness(0) saturate(100%) invert(51%) sepia(47%) saturate(418%) hue-rotate(341deg) brightness(94%) contrast(86%);
+	transition: .1s all;
 }
 
 /* ************* PRODUCTS ************* */

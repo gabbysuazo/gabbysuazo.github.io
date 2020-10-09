@@ -51,6 +51,11 @@ h5 {
 	font-weight: 400;
 }
 
+h6 {
+	font-size: 45px;
+	font-weight: 300;
+}
+
 a {
 	text-decoration: none;
 }
@@ -296,4 +301,28 @@ footer a:hover {
 }
 
 /* ************* PRODUCTS ************* */
+/* ************* DETAILS ************* */
+
+.back-arrow {
+	position: absolute;
+	left: 50px;
+}
+
+.back-arrow img {
+	max-width: 50px;
+}
+
+.details-bun-image img {
+	max-width: 500px;
+}
+
+.details-container {
+	display: flex;
+}
+
+.details-page {
+	max-width: 1400px;
+}
+
+/* ************* DETAILS ************* */
 /* ************* MAIN ************* */

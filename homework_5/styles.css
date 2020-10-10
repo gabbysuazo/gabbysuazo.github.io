@@ -307,17 +307,29 @@ footer a:hover {
 /* ************* PRODUCTS ************* */
 /* ************* DETAILS ************* */
 
-.details-page {
-	margin: auto;
-}
-
 .back-arrow {
 	position: absolute;
 	left: 50px;
 }
 
 .back-arrow img {
-	max-width: 50px;
+	max-width: 35px;
+}
+
+.back-arrow a {
+	color: #6A8DA5;
+}
+
+.back-arrow h3 {
+	padding-left: 10px;
+}
+
+.goback-link {
+	display: flex;
+}
+
+.details-page {
+	margin: auto;
 }
 
 .details-page {
@@ -390,6 +402,12 @@ footer a:hover {
 	margin-bottom: 0;
 }
 
+.glazing-options h6:hover {
+	background-color: #6A8DA5;
+	color: #E2EAED;
+	transition: .15s all;
+}
+
 .details-container button {
 	color: #f8f8f8;
 	background-color: #6A8DA5;
@@ -398,6 +416,11 @@ footer a:hover {
 	border-radius: 100px;
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 300;
+}
+
+.details-container button:hover {
+	background-color: #b57e59;;
+	transition: .15s all;
 }
 
 /* ************* DETAILS ************* */

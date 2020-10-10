@@ -312,6 +312,11 @@ footer a:hover {
 	left: 50px;
 }
 
+.back-arrow:hover {
+	filter: brightness(0) saturate(100%) invert(52%) sepia(12%) saturate(1635%) hue-rotate(341deg) brightness(100%) contrast(83%);
+	transition: .15s all;
+}
+
 .back-arrow img {
 	max-width: 35px;
 }
@@ -419,7 +424,7 @@ footer a:hover {
 }
 
 .details-container button:hover {
-	background-color: #b57e59;;
+	background-color: #b57e59;
 	transition: .15s all;
 }
 

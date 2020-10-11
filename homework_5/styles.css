@@ -391,6 +391,7 @@ footer a:hover {
 	display: flex;
 	margin-bottom: 30px;
 	margin-top: 30px;
+	align-items: center;
 }
 
 .quantity-option-container .bun-quantity {

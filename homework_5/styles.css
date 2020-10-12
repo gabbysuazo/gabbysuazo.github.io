@@ -118,30 +118,19 @@ nav {
 
 .nav-container ul li {
 	list-style-type: none;
-	margin-left: 75px;
+	margin-left: 80px;
+	display: flex;
+	justify-content: center;
 }
 
-.nav-container-home ul li a {
-	color: #f8f8f8;
-}
-
-.nav-container-pages ul li a {
-	color: #6A8DA5;
-}
-
-.nav-container-home ul li a:hover {
-	color: #6A8DA5;
-	transition: .15s all;
-}
-
-.nav-container-pages ul li a:hover {
-	color: #b57e59;
+.nav-container img {
+	max-width: 35px;
+	padding-left: 5px;
+	padding-top: 5px;
 }
 
 .nav-container-home ul li {
 	color: #f8f8f8;
-	display: flex;
-	justify-content: center;
 }
 
 .nav-container-home ul li:hover {
@@ -150,18 +139,27 @@ nav {
 	transition: .15s all;
 }
 
-.nav-container-home img {
-	max-width: 35px;
-	padding-left: 5px;
-	padding-top: 5px;
+.nav-container-home ul li a {
+	color: #f8f8f8;
 }
 
-.cart-container-pages {
-	filter: brightness(0) saturate(100%) invert(51%) sepia(44%) saturate(281%) hue-rotate(161deg) brightness(96%) contrast(88%);
+.nav-container-home ul li a:hover {
+	color: #6A8DA5;
+	transition: .15s all;
 }
 
-.cart-container-pages:hover {
-	filter: brightness(0) saturate(100%) invert(51%) sepia(47%) saturate(418%) hue-rotate(341deg) brightness(94%) contrast(86%);
+.nav-container-pages ul li:hover {
+	color: #b57e59;
+	filter: brightness(0) saturate(100%) invert(53%) sepia(21%) saturate(810%) hue-rotate(341deg) brightness(96%) contrast(95%);
+	transition: .15s all;
+}
+
+.nav-container-pages ul li a {
+	color: #6A8DA5;
+}
+
+.nav-container-pages ul li a:hover {
+	color: #b57e59;
 }
 
 /* ************* HEADER ************* */

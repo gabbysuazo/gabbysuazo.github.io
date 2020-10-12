@@ -352,7 +352,7 @@ footer a:hover {
 
 .details-bun-image img {
 	width: 100%;
-	max-width: 500px;
+	max-width: 415px;
 }
 
 .details-container {
@@ -428,6 +428,7 @@ footer a:hover {
 	background-color: #6A8DA5;
 	font-size: 36px;
 	padding: 15px 35px;
+	margin-top: 20px;
 	border-radius: 100px;
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 300;

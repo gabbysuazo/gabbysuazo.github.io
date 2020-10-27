@@ -445,6 +445,29 @@ footer a:hover {
 	transition: .15s all;
 }
 
+.glazing-options form {
+	display: flex;
+}
+
+.glazing-options form input {
+	opacity: 0;
+    width: 0;
+    height: 0; 
+}
+
+.glazing-options form label {
+	font-size: 25px;
+	background-color: #E2EAED;
+	padding: 8px 10px;
+	margin-right: 15px;
+	margin-bottom: 0;
+}
+
+.glazing-options form label:hover {
+	background-color: #6A8DA5;
+	color: #f8f8f8;
+}
+
 /* ************* DETAILS ************* */
 /* ************* CART ************* */
 
@@ -578,3 +601,9 @@ footer a:hover {
 
 /* ************* CART ************* */
 /* ************* MAIN ************* */
+
+/* ************* JAVASCRIPT CLASSES ************* */
+
+
+
+/* ************* JAVASCRIPT CLASSES ************* */

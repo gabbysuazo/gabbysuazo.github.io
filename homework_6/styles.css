@@ -141,11 +141,16 @@ nav {
 
 .nav-container-home ul li a {
 	color: #f8f8f8;
+	display: flex;
 }
 
 .nav-container-home ul li a:hover {
 	color: #6A8DA5;
 	transition: .15s all;
+}
+
+.nav-container-pages ul li {
+	filter: brightness(0) saturate(100%) invert(59%) sepia(14%) saturate(807%) hue-rotate(161deg) brightness(89%) contrast(89%);
 }
 
 .nav-container-pages ul li:hover {
@@ -156,6 +161,7 @@ nav {
 
 .nav-container-pages ul li a {
 	color: #6A8DA5;
+	display: flex;
 }
 
 .nav-container-pages ul li a:hover {

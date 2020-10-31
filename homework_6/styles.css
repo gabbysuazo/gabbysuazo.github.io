@@ -599,8 +599,20 @@ footer a:hover {
 /* ************* CART ************* */
 /* ************* MAIN ************* */
 
-/* ************* JAVASCRIPT CLASSES ************* */
+.cart-item-amount {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: #6A8DA5;
+    color: #f8f8f8;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 30px;
+	top: 130px;
+}
 
-
-
-/* ************* JAVASCRIPT CLASSES ************* */
+.cart-item-amount p {
+	font-size: 16px;
+}

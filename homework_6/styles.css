@@ -356,6 +356,11 @@ footer a:hover {
 	margin-bottom: 100px;
 }
 
+.details-bun-image {
+	text-align: center;
+	color: #b57e59;
+}
+
 .details-bun-image img {
 	width: 100%;
 	max-width: 415px;

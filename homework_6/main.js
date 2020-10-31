@@ -13,14 +13,14 @@
 // Select Glazing
 
 document.getElementById("glazing-options").addEventListener("click", function() { 
-    var glazing = document.getElementsByName('glazing'); 
+    let glazing = document.getElementsByName('glazing'); 
       
     for(i = 0; i < glazing.length; i++) { 
-        if(glazing[i].checked) 
-        document.getElementById("bun-caption").innerHTML = "glazing: "+glazing[i].value; 
-    } 
+        if(glazing[i].checked) {
+            document.getElementById("bun-caption").innerHTML = glazing[i].value;
+        }
+    }
 });
-
 
 // Select Quantity
 
@@ -41,4 +41,23 @@ document.getElementById("minus").addEventListener("click", function() {
         quantityString = quantityInt.toString();
         document.getElementById("quantity").innerHTML = quantityString;
     }
+});
+
+
+let cartItemCountString = document.getElementById("cart-item-amount").innerHTML;
+let cartItemCountInt = parseInt(cartItemCountString);
+
+document.getElementById("add-cart-button").addEventListener("click", function() {
+    cartItemCountInt = cartItemCountInt + quantityInt
+    cartItemCountString = cartItemCountInt.toString();
+    document.getElementById("cart-item-amount").innerHTML = cartItemCountString;
+
+    let glazing = document.getElementsByName('glazing'); 
+    for(i = 0; i < glazing.length; i++) { 
+        if(glazing[i].checked) {
+            glazing[i].checked = false;
+        }
+    }
+
+    document.getElementById("quantity").innerHTML = "0";
 });

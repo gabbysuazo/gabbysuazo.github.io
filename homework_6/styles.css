@@ -294,17 +294,35 @@ footer a:hover {
 .bun-quantity {
 	display: flex;
 	align-items: center;
-	background-color: #6A8DA5;
-	border: 1px solid #6A8DA5;
-	border-radius: 5px;
 	margin-top: 10px;
 }
 
 .blue-background {
-	width: 25px;
-	display: flex;
-	justify-content: center;
-	padding: 0 5px;
+    width: 10px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    padding: 0 12px;
+	background-color: #6A8DA5;
+	border: 1px solid #6A8DA5;
+}
+
+.blue-background-left {
+	border-radius: 5px 0 0 5px;
+}
+
+.blue-background-right {
+	border-radius: 0 5px 5px 0;
+}
+
+.blue-background-left:hover {
+	background-color: #b57e59;
+	border-color: #b57e59;
+}
+
+.blue-background-right:hover {
+	background-color: #b57e59;
+	border-color: #b57e59;
 }
 
 .bun-quantity img {
@@ -312,11 +330,14 @@ footer a:hover {
 }
 
 .white-background {
-	width: 35px;
-	display: flex;
-	justify-content: center;
-	padding: 0 5px;
-	background-color: #f8f8f8;
+	width: 40px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    padding: 0 8px;
+    background-color: #f8f8f8;
+	border-top: 1px solid #6A8DA5;
+	border-bottom: 1px solid #6A8DA5;
 }
 
 /* ************* PRODUCTS ************* */

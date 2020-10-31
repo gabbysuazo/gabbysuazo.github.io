@@ -1,15 +1,3 @@
-// productArr = []
-
-// class Product {
-//     constructor(bunFlavor, glazing, quantity, price) {
-//         this.bunFlavor = bunFlavor
-//         this.glazing = glazing
-//         this.quantity = quantity
-//         this.price = price
-//     }
-// }
-
-
 // Select Glazing
 
 document.getElementById("glazing-options").addEventListener("click", function() { 
@@ -21,6 +9,7 @@ document.getElementById("glazing-options").addEventListener("click", function() 
         }
     }
 });
+
 
 // Select Quantity
 
@@ -43,6 +32,8 @@ document.getElementById("minus").addEventListener("click", function() {
     }
 });
 
+
+// Submit Selections
 
 let cartItemCountString = document.getElementById("cart-item-amount").innerHTML;
 let cartItemCountInt = parseInt(cartItemCountString);

@@ -49,6 +49,60 @@ document.getElementById("add-cart-button").addEventListener("click", function() 
             glazing[i].checked = false;
         }
     }
-
-    document.getElementById("quantity").innerHTML = "0";
 });
+
+
+// Add to Cart
+
+let carts = document.querySelectorAll('#add-cart-button');
+
+let products = [
+    {
+        name: 'Original',
+        tag: 'original',
+        price: 2.49,
+        inCart: 0
+    },
+    {
+        name: 'Blackberry',
+        tag: 'blackberry',
+        price: 2.49,
+        inCart: 0
+    },
+    {
+        name: 'Walnut',
+        tag: 'walnut',
+        price: 2.49,
+        inCart: 0
+    },
+]
+
+
+for (let i=0; i < carts.length; i++) {
+    carts[i].addEventListener('click', () => {
+        cartNumbers();
+        location.reload();
+    })
+}
+
+function onLoadCartNumbers() {
+    let productNumbers = localStorage.getItem('cartNumbers');
+
+    if (productNumbers) {
+        document.querySelector('#cart-item-amount').textContent = productNumbers;
+    }
+}
+
+function cartNumbers() {
+    let productNumbers = localStorage.getItem('cartNumbers');
+
+    productNumbers = parseInt(productNumbers);
+
+    if (productNumbers) {
+        localStorage.setItem('cartNumbers', productNumbers + cartItemCountInt)
+    } else {
+        localStorage.setItem('cartNumbers', cartItemCountInt);
+    }
+}
+
+onLoadCartNumbers()

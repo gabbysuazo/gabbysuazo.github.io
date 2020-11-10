@@ -15,7 +15,7 @@
 
 	</head>
 
-	<body>
+	<body onload="cartCount()">
 
 		<header>
 			<div class="blue-header">
@@ -28,12 +28,15 @@
 						<li><h3><a href="about.html">about us</a></h3></li>
 						<li><h3><a href="contact.html">contact us</a></h3></li>
 						<li>
-							<a href="cart.html">
+							<a href="cart.html" onclick="goToCheckoutPage()">
 								<h3>cart</h3>
 								<img src="images/cart.svg" title="Cart" alt="Cart icon">
 							</a>
 						</li>
 					</ul>
+					<div class="cart-item-amount">
+						<p id="cart-item-amount">0</p>
+					</div>
 				</div>
 			</nav>
 		</header>
@@ -56,32 +59,39 @@
 						<img src="images/detail-bun6.png" title="Walnut Cinnamon Bun" alt="Walnut Cinnamon Bun photo">
 					</div>
 					<div class="details-bun-info">
-						<h6>$2.99</h6>
+						<h6>$<span id="bun-price">2.99</span></h6>
 						<p>Our world famous original flavor cinnabon bun tastes like angel kisses. You may or may not be able to buy similar ones at the grocery store in the refrigerated section.</p>
 						<div class="glazing-options-container">
 							<h3>choose glazing:</h3>
-							<div class="glazing-options">
-								<h6>none</h6>
-								<h6>sugar milk</h6>
-								<h6>vanilla milk</h6>
-								<h6>double chocolate</h6>
+							<div class="glazing-options" id="glazing-options">
+								<input type="radio" name="glazing" id="radio1" value="none" />
+								<label id="productGlazing" for="radio1">none</label>
+
+								<input type="radio" name="glazing" id="radio2" value="sugar milk" />
+								<label id="productGlazing" for="radio2">sugar milk</label>
+
+								<input type="radio" name="glazing" id="radio3" value="vanilla milk" />
+								<label id="productGlazing" for="radio3">vanilla milk</label>
+
+								<input type="radio" name="glazing" id="radio4" value="double chocolate" />
+								<label id="productGlazing" for="radio4">double chocolate</label>
 							</div>
 						</div>
 						<div class="quantity-option-container">
 							<h3>quantity:</h3>
 							<div class="bun-quantity">
-								<div class="blue-background">
+								<div class="blue-background blue-background-left" id="minus">
 									<img src="images/test-minus.svg" title="Minus Sign" alt="Minus Sign">
 								</div>
 								<div class="white-background">
-									<h3>0</h3>
+									<h3 id="quantity">0</h3>
 								</div>
-								<div class="blue-background">
+								<div class="blue-background blue-background-right" id="plus">
 									<img src="images/test-plus.svg" title="Plus Sign" alt="Plus Sign">
 								</div>
 							</div>
 						</div>
-						<button	>add to cart</button>
+						<button	id="add-cart-button" onclick="addToCart()">add to cart</button>
 					</div>
 				</div>
 			</div>

@@ -15,7 +15,7 @@
 
 	</head>
 
-	<body>
+	<body onload="checkoutPageLoaded()">
 
 		<header>
 			<div class="blue-header">
@@ -28,12 +28,15 @@
 						<li><h3><a href="about.html">about us</a></h3></li>
 						<li><h3><a href="contact.html">contact us</a></h3></li>
 						<li>
-							<a href="cart.html">
+							<a href="cart.html" onclick="goToCheckoutPage()">
 								<h3>cart</h3>
 								<img src="images/cart.svg" title="Cart" alt="Cart icon">
 							</a>
 						</li>
 					</ul>
+					<div class="cart-item-amount">
+						<p id="cart-item-amount">0</p>
+					</div>
 				</div>
 			</nav>
 		</header>
@@ -43,36 +46,21 @@
 				<div class="page-heading">
 					<h2>cart</h2>
 				</div>
-				<div class="cart-container">
-					<div class="items-left">
-						<div class="item">
-							<div class="cart-quantity">
-								<h3>1</h3>
-							</div>
-							<div class="cart-item-name-container">
-								<img src="images/detail-bun1.png" title="Original Cinnamon Bun" alt="Original Cinnamon Bun">
-								<div class="cart-item-name">
-									<h3>original</h3>
-									<h5>glazing: sugar milk</h5>
-								</div>
-							</div>
-							<div class="item-price">
-								<h3>$2.49</h3>
-							</div>
-						</div>
+				<div class="cart-container" id="cart-container">
+					<div id="items-left">
 					</div>
 					<div class="checkout-right">
 						<div class="totals-container">
 							<div class="subtotal">
 								<div class="subtotal-cost">
-									<h3>subtotal: <span>$2.49</span></h3>
+									<h3>subtotal: $<span id="subtotal">2.49</span></h3>
 								</div>
 								<div class="tax-cost">
-									<h3>tax: <span>$0.15</span></h3>
+									<h3>tax: $<span id="tax">0.15</span></h3>
 								</div>
 							</div>
 							<div class="total-cost">
-								<h3>total: <span>$2.64</span></h3>
+								<h3>total: <span>$<span id="total">2.64</span></h3>
 							</div>
 						</div>
 						<div class="checkout-buttons">

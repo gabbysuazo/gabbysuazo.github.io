@@ -500,7 +500,7 @@ footer a:hover {
 	display: flex;
 }
 
-.items-left {
+#items-left {
 	width: 60%;
 	padding-right: 100px;
 }
@@ -523,6 +523,7 @@ footer a:hover {
 }
 
 .cart-item-name-container {
+	width: 55%;
 	display: flex;
 	align-items: center;
 }
@@ -637,6 +638,20 @@ footer a:hover {
 
 .cart-item-amount p {
 	font-size: 16px;
+}
+
+.cart-item-amount-home {
+	width: 30px;
+    height: 30px;
+    position: absolute;
+    background-color: #6A8DA5;
+    color: #f8f8f8;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 30px;
+	top: 55px;
 }
 
 

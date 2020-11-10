@@ -15,7 +15,7 @@
 
 	</head>
 
-	<body>
+	<body onload="cartCount()">
 
 		<header>
 			<div class="blue-header">
@@ -28,7 +28,7 @@
 						<li><h3><a href="about.html">about us</a></h3></li>
 						<li><h3><a href="contact.html">contact us</a></h3></li>
 						<li>
-							<a href="cart.html">
+							<a href="cart.html" onclick="goToCheckoutPage()">
 								<h3>cart</h3>
 								<img src="images/cart.svg" title="Cart" alt="Cart icon">
 							</a>
@@ -52,30 +52,30 @@
 			</div>
 			<div class="details-page">
 				<div class="page-heading">
-					<h2>original</h2>
+					<h2 id='product-name'>original</h2>
 				</div>
 				<div class="details-container">
 					<div class="details-bun-image" id="details-bun-image">
-						<img src="images/detail-bun1.png" title="Original Cinnamon Bun" alt="Original Cinnamon Bun photo">
-						<h3 id="bun-caption"></h3>
+						<img id="product-image" src="images/detail-bun1.png" title="Original Cinnamon Bun" alt="Original Cinnamon Bun photo">
+						<h3 id="bun-caption">none</h3>
 					</div>
 					<div class="details-bun-info">
-						<h6>$2.49</h6>
+						<h6>$<span id="bun-price">2.49</span></h6>
 						<p>Our world famous original flavor cinnabon bun tastes like angel kisses. You may or may not be able to buy similar ones at the grocery store in the refrigerated section.</p>
 						<div class="glazing-options-container">
 							<h3>choose glazing:</h3>
 							<div class="glazing-options" id="glazing-options">
 								<input type="radio" name="glazing" id="radio1" value="none" />
-								<label for="radio1">none</label>
+								<label id="productGlazing" for="radio1">none</label>
 
 								<input type="radio" name="glazing" id="radio2" value="sugar milk" />
-								<label for="radio2">sugar milk</label>
+								<label id="productGlazing" for="radio2">sugar milk</label>
 
 								<input type="radio" name="glazing" id="radio3" value="vanilla milk" />
-								<label for="radio3">vanilla milk</label>
+								<label id="productGlazing" for="radio3">vanilla milk</label>
 
 								<input type="radio" name="glazing" id="radio4" value="double chocolate" />
-								<label for="radio4">double chocolate</label>
+								<label id="productGlazing" for="radio4">double chocolate</label>
 							</div>
 						</div>
 						<div class="quantity-option-container">
@@ -92,7 +92,7 @@
 								</div>
 							</div>
 						</div>
-						<button	id="add-cart-button">add to cart</button>
+						<button	id="add-cart-button" onclick="addToCart()">add to cart</button>
 					</div>
 				</div>
 			</div>

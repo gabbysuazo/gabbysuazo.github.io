@@ -70,10 +70,42 @@ function checkoutPageLoaded() {
     let loadedProductArr = localStorage.getItem('order');
     let productArr2 = JSON.parse(loadedProductArr);
 
+    console.log(productArr2);
+
     for (let i=0; i < productArr2.length; i++) {
         let div1 = document.createElement("DIV");
         div1.classList.add('item');
         document.getElementById('items-left').appendChild(div1);
+
+        let xButton = document.createElement("button");
+        xButton.classList.add('remove-button');
+        div1.appendChild(xButton);
+        xButton.innerHTML = 'X';
+        xButton.style.fontFamily = "Quicksand";
+        xButton.style.fontSize = "25px";
+        xButton.style.padding = "2px 8px";
+        xButton.style.backgroundColor = "transparent";
+        xButton.style.color = "#6A8DA5";
+        xButton.onmouseenter = function(){
+            xButton.style.color = "#b57e59";
+        };
+        xButton.onmouseleave = function(){
+            xButton.style.color = "#6A8DA5";
+        };
+
+        let products = [];
+        for (var x = 0; x < productArr2.length; x++) {
+            products.push(document.getElementsByClassName("item")[x]);
+        }
+    
+        xButton.onclick = function(){
+            let index = Array.prototype.indexOf.call(products, event.target.closest("div"));
+            let removeItem = event.target.closest("div");
+            productArr2.splice(index);
+            console.log(productArr2)
+            removeItem.remove();
+            cartCount();
+        };
 
         let div2 = document.createElement('DIV');
         div2.classList.add('cart-quantity');

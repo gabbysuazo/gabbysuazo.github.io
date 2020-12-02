@@ -7,34 +7,83 @@
 
 		<title></title>
 
-		<link type="text/css" rel="stylesheet" href="styles.css" />
+        <link type="text/css" rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <script src="https://kit.fontawesome.com/b220c361cf.js" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
         <header>
-            <nav role="navigation">
-                <div id="menuToggle">
-                    <input type="checkbox" />
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            <div class="header-div">
+                <nav role="navigation" class="nav">
+                    <div id="menuToggle">
+                        <form>
+                            <input type="checkbox" id="menu-checkbox" name="menu-checkbox">
+                            <label for="menu-checkbox">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M17 9.5H3M21 4.5H3M21 14.5H3M17 19.5H3"/></svg>
+                            </label>
+                        </form>
+    
+                        <ul id="menu">
+                            <a href="#"><li>Home</li></a>
+                            <a href="#"><li>About</li></a>
+                            <a href="#"><li>Info</li></a>
+                            <a href="#"><li>Contact</li></a>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
 
-                    <ul id="menu">
-                        <a href="#"><li>Home</li></a>
-                        <a href="#"><li>About</li></a>
-                        <a href="#"><li>Info</li></a>
-                        <a href="#"><li>Contact</li></a>
-                    </ul>
+            <div class="header-div">
+                <div class="eye-container">
+                    <img src="images/lusid-eye.svg" title="lusid Eye Logo" alt="lusid Eye Logo">
                 </div>
-              </nav>
+                <div class="lusid-logo">
+                    <img src="images/3d-logo.svg" title="lusid Logo" alt="lusid">
+                </div>
+            </div>
 
-              <div class="eye-container">
-                  <img src="images/lusid-eye.svg" title="lusid Eye Logo" alt="lusid Eye Logo">
-              </div>
+            <div class="header-div">
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="search" name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                    <div class="header-right">
+                        <div class="search">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.108 12.283">
+                                <g id="Group_26191" data-name="Group 26191" transform="translate(-92 -106)">
+                                  <g id="Ellipse_12" data-name="Ellipse 12" transform="translate(92 106)" fill="none" stroke="#000" stroke-width="0.8">
+                                    <circle cx="5.358" cy="5.358" r="5.358" stroke="none"></circle>
+                                    <circle cx="5.358" cy="5.358" r="4.958" fill="none"></circle>
+                                  </g>
+                                  <line id="Line_1253" data-name="Line 1253" x2="3" y2="3" transform="translate(100.825 115)" fill="none" stroke="#000" stroke-width="0.8"></line>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="shopping-bag">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 12">
+                                <g id="Group_26105" data-name="Group 26105" transform="translate(-46.987 -26.84)">
+                                <g id="Rectangle_1268" data-name="Rectangle 1268" transform="translate(46.987 29.84)" fill="none" stroke="#000" stroke-width="0.8">
+                                    <rect width="11" height="9" stroke="none"></rect>
+                                    <rect x="0.4" y="0.4" width="10.2" height="8.2" fill="none"></rect>
+                                </g>
+                                <g id="Path_38" data-name="Path 38" transform="translate(49.987 26.84)" fill="none">
+                                    <path d="M2.5,0A2.432,2.432,0,0,1,5,2.357V3.771H0V2.357A2.432,2.432,0,0,1,2.5,0Z" stroke="none"></path>
+                                    <path d="M 2.5 0.8000020980834961 C 1.562619924545288 0.8000020980834961 0.8000001907348633 1.498552083969116 0.8000001907348633 2.357182025909424 L 0.8000001907348633 2.971482276916504 L 3.059060096740723 2.971482276916504 L 4.199999809265137 2.971482276916504 L 4.199999809265137 2.357182025909424 C 4.199999809265137 1.498552083969116 3.437379837036133 0.8000020980834961 2.5 0.8000020980834961 M 2.5 2.145767211914062e-06 C 3.880710124969482 2.145767211914062e-06 5 1.055342197418213 5 2.357182025909424 L 5 3.771482229232788 L 3.059060096740723 3.771482229232788 L 0 3.771482229232788 L 0 2.357182025909424 C 0 1.055342197418213 1.119290113449097 2.145767211914062e-06 2.5 2.145767211914062e-06 Z" stroke="none" fill="#000"></path>
+                                </g>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </header>
+
+        
 
 		<script src="main.js"></script>
 	</body>

@@ -69,9 +69,6 @@ h1 {
     top: 0;
     left: 0;
     width: 100%;
-    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
     transition: all 0.2s ease-in-out;
     height: 16.53333vw;
 	background-color:transparent;
@@ -82,6 +79,9 @@ h1 {
 
 .active {
 	background-color: #fff;
+	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
 }
 
 .black-stroke {
@@ -209,12 +209,12 @@ h1 {
 
 ===================================*/
 
-.lusid-logo {
+.lusid-logo-eye {
 	display: flex;
 	align-items: center;
 }
 
-.lusid-logo img {
+.lusid-logo-eye img {
 	width: 40px;
 }
 
@@ -307,13 +307,13 @@ input[type="text"]::placeholder {
 }
 
 .footer-content {
-	width: 85%;
+	width: 90%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.footer-content img {
+.lusid-logo img {
 	width: 50px;
 }
 
@@ -324,6 +324,7 @@ input[type="text"]::placeholder {
 
 .instagram-link svg {
 	width: 20px;
+	text-align: right;
 }
 
 /*===================================
@@ -417,6 +418,10 @@ input[type="text"]::placeholder {
 	font-size: 13px;
 }
 
+.bold {
+	font-family: 'Urbanist Bold';
+}
+
 /*===================================
 
 	About
@@ -432,9 +437,13 @@ input[type="text"]::placeholder {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	padding: 10px 10px 8px 10px;
-	font-family: 'Urbanist';
+	padding: 10px 10px 7px 10px;
+	font-family: 'Urbanist Bold';
 	letter-spacing: 2px;
+	color: #ffffff;
+}
+
+.home-product-photos a {
 	color: #ffffff;
 }
 
@@ -510,5 +519,139 @@ input[type="text"]::placeholder {
 /*===================================
 
 	Body
+
+===================================*/
+
+
+
+/********************************************************************************************************
+
+											Media Queries
+
+*********************************************************************************************************/								
+
+/*===================================
+
+	Min-Width: 620px
+
+===================================*/
+
+@media (min-width: 620px) {
+	body {
+		padding-bottom: 6vw;
+	}
+	.header {
+		height: 7vw;
+	}
+	.footer-container {
+		height: 6vw;
+	}
+	.hero-heading h1 {
+		margin-bottom: 20px;
+	}
+}
+/*===================================
+
+	Min-Width: 620px
+
+===================================*/
+/*===================================
+
+	Min-Width: 768px
+
+===================================*/
+
+@media (min-width: 768px) {
+	.home-product-photos {
+		padding: 20px
+	}
+	.home-tops, .home-bottoms, .home-outerwear {
+		width: calc(33.3333% - 13px);
+	}
+	.home-outerwear {
+		margin-top: 0;
+	}
+}
+
+/*===================================
+
+	Min-Width: 768px
+
+===================================*/
+/*===================================
+
+	Min-Width: 1025px
+
+===================================*/
+
+@media (min-width: 1025px) {
+	body {
+		padding-bottom: 4.53125vw;
+	}
+	.header {
+		height: 5.83125vw;
+	}
+	.footer-container {
+		height: 4.53125vw;
+	}
+	#menuToggle svg {
+		width: 34px;
+	}
+	.lusid-logo-eye img {
+		width: 55px;
+	}
+	.search svg {
+		width: 22px;
+	}
+	.shopping-bag svg {
+		width: 20px;
+	}
+	.lusid-logo img {
+		width: 75px;
+	}
+	.instagram-link svg {
+		width: 30px;
+	}
+	.hero-heading h1 {
+		font-size: 3em;
+		margin-bottom: 30px
+	}
+	.shop-link {
+		width: 22%;
+	}
+	.shop-link a {
+		font-size: 24px;
+	}
+	.about-lusid p {
+		text-align: center;
+	}
+}
+
+/*===================================
+
+	Min-Width: 1025px
+
+===================================*/
+/*===================================
+
+	Min-Width: 1367px
+
+===================================*/
+
+@media (min-width: 1367px) {
+	body {
+		padding-bottom: 3.35vw;
+	}
+	.header {
+		height: 4.54167vw;
+	}
+	.footer-container {
+		height: 3.54167vw;
+	}
+}
+
+/*===================================
+
+	Min-Width: 1367px
 
 ===================================*/

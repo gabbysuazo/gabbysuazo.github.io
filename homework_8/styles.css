@@ -11,7 +11,8 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 body {
     background-color: #ffffff;
     font-family: 'Avenir', 'Urbanist', sans-serif;
-    color: #000000;
+	color: #000000;
+	padding-bottom: 14.33333vw;
 }
 
 /*===================================
@@ -48,6 +49,7 @@ h1 {
 	background-color:transparent;
 	display: flex;
 	flex-direction: column;
+	z-index: 1000;
 }
 
 .active {
@@ -101,16 +103,14 @@ h1 {
 }
 
 #menu {
-    position: absolute;
-    bottom: 0;
+	position: absolute;
     width: 100%;
     background-color: #ffffff;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
-	transform-origin: 0 100%;
-	transform: translate(0, 450%);
-    /* transform: translate(0, 328%); */
-    transition: transform 0.3s cubic-bezier(0.77,0.2,0.05,1.0);
+    transform-origin: 0 100%;
+    transform: translate(0, -100%);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 #close-menu {
@@ -140,6 +140,8 @@ h1 {
 #menu-nav a {
 	color: #000000;
 	text-decoration: none;
+	font-family: 'Urbanist';
+	letter-spacing: 3px;
 }
 
 /*===================================
@@ -306,6 +308,11 @@ input[type="text"]::placeholder {
 	Body
 
 ===================================*/
+/*===================================
+
+	Hero
+
+===================================*/
 
 .hero-container {
 	width: 100%;
@@ -357,6 +364,121 @@ input[type="text"]::placeholder {
     pointer-events: none;
 }
 
+/*===================================
+
+	Hero
+
+===================================*/
+/*===================================
+
+	About
+
+===================================*/
+
+.about-lusid {
+	max-width: 75%;
+	margin: auto;
+	padding: 80px 0;
+	font-family: 'Urbanist';
+	letter-spacing: 1.5px;
+	line-height: 1.8;
+	text-align: justify;
+}
+
+.about-lusid p {
+	font-size: 13px;
+}
+
+/*===================================
+
+	About
+
+===================================*/
+/*===================================
+
+	Home - Product Photos
+
+===================================*/
+
+.home-product-photos {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 10px 10px 8px 10px;
+	font-family: 'Urbanist';
+	letter-spacing: 2px;
+	color: #ffffff;
+}
+
+.home-tops {
+	width: calc(50% - 5px);
+	height: auto;
+	position: relative;
+}
+
+.tops-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-bottoms {
+	width: calc(50% - 5px);
+	height: auto;
+	position: relative;
+}
+
+.bottoms-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-outerwear {
+	width: 100%;
+	height: auto;
+	position: relative;
+	margin-top: 4px;
+}
+
+.outerwear-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-tops img, .home-bottoms img, .home-outerwear img {
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*===================================
+
+	Home - Product Photos
+
+===================================*/
 /*===================================
 
 	Body

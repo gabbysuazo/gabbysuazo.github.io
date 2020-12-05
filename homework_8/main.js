@@ -12,6 +12,7 @@ $(function() {
             $("#footer-logo").attr("src", "images/lusid-logo-black.svg");
             $("#footer-ig").addClass("black-fill");
         } else {
+            //remove the background property so it comes transparent again (defined in your css)
            $(".header").removeClass("active");
            $("g").removeClass("black-stroke");
            $("line").removeClass("black-stroke");
@@ -27,19 +28,19 @@ $(function() {
     $(document).on("click", function() {
         if ($('#menu-checkbox').prop('checked') == true) {
             $('#menu').css({
-                '-webkit-transform' : 'translate(0, 328%)',
-                '-moz-transform'    : 'translate(0 328%)',
-                '-ms-transform'     : 'translate(0, 328%)',
-                '-o-transform'      : 'translate(0, 328%)',
-                'transform'         : 'translate(0, 328%)'
+                '-webkit-transform' : 'translate(0, 0)',
+                '-moz-transform'    : 'translate(0, 0)',
+                '-ms-transform'     : 'translate(0, 0)',
+                '-o-transform'      : 'translate(0, 0)',
+                'transform'         : 'translate(0, 0)'
             })
         } if ($('#menu-checkbox').prop('checked') == false) {
             $('#menu').css({
-                '-webkit-transform' : 'translate(0, 450%)',
-                '-moz-transform'    : 'translate(-0, 450%)',
-                '-ms-transform'     : 'translate(0, 450%',
-                '-o-transform'      : 'translate(0, 450%)',
-                'transform'         : 'translate(0, 450%)'
+                '-webkit-transform' : 'translate(0, -100%)',
+                '-moz-transform'    : 'translate(-0, -100%)',
+                '-ms-transform'     : 'translate(0, -100%',
+                '-o-transform'      : 'translate(0, -100%)',
+                'transform'         : 'translate(0, -100%)'
             })
         } else {
             return;

@@ -17,6 +17,34 @@ body {
 
 /*===================================
 
+	Fonts
+
+===================================*/
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('images/fonts/avenir.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Urbanist Bold';
+    src: url('images/fonts/urbanist-bold-webfont.woff2') format('woff2'),
+         url('images/fonts/urbanist-bold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('images/fonts/urbanist-light-webfont.woff2') format('woff2'),
+         url('images/fonts/urbanist-light-webfont.woff') format('woff');
+}
+
+/*===================================
+
+	Fonts
+
+===================================*/
+/*===================================
+
 	Headings
 
 ===================================*/

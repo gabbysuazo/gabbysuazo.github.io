@@ -37,10 +37,32 @@ $(function() {
         } if ($('#menu-checkbox').prop('checked') == false) {
             $('#menu').css({
                 '-webkit-transform' : 'translate(0, -100%)',
-                '-moz-transform'    : 'translate(-0, -100%)',
+                '-moz-transform'    : 'translate(0, -100%)',
                 '-ms-transform'     : 'translate(0, -100%',
                 '-o-transform'      : 'translate(0, -100%)',
                 'transform'         : 'translate(0, -100%)'
+            })
+        } else {
+            return;
+        }
+    });
+
+    $(document).on("click", function() {
+        if ($('#menu-checkbox').prop('checked') == true) {
+            $('#desktop-menu').css({
+                '-webkit-transform' : 'translate(0, 0)',
+                '-moz-transform'    : 'translate(0, 0)',
+                '-ms-transform'     : 'translate(0, 0)',
+                '-o-transform'      : 'translate(0, 0)',
+                'transform'         : 'translate(0, 0)'
+            })
+        } if ($('#menu-checkbox').prop('checked') == false) {
+            $('#desktop-menu').css({
+                '-webkit-transform' : 'translate(-100%, 0)',
+                '-moz-transform'    : 'translate(-100%, 0)',
+                '-ms-transform'     : 'translate(-100%, 0',
+                '-o-transform'      : 'translate(-100%, 0)',
+                'transform'         : 'translate(-100%, 0)'
             })
         } else {
             return;

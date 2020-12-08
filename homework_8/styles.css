@@ -958,6 +958,7 @@ input[type="text"]::placeholder {
 	.individual-product-info-container {
 		margin-left: 20px;
 		width: 40%;
+		max-width: 500px;
 	}
 	.individual-product-info {
 		padding-right: 0;
@@ -986,6 +987,12 @@ input[type="text"]::placeholder {
 	}
 	.extra-products {
 		margin-top: 60px;
+	}
+	.select-items {
+		width: 100%;
+		z-index: 1000;
+		top: 100%;
+		bottom: 0;
 	}
 }
 

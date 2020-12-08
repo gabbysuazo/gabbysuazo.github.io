@@ -90,10 +90,10 @@ $(function() {
 
 
     $(window).on("scroll", function() {
-        if($(window).scrollTop() < 45) {
-            $(".product-buttons").addClass("fixed-product-buttons");
-        } else {
+        if($(window).scrollTop() > 200) {
             $(".product-buttons").removeClass("fixed-product-buttons");
+        } else {
+            $(".product-buttons").addClass("fixed-product-buttons");
         }
     });
     

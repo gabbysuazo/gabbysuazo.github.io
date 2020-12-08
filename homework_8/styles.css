@@ -686,18 +686,20 @@ input[type="text"]::placeholder {
 
 .individual-product figure {
 	width: 100%;
-	margin-bottom: 12px;
+    padding-bottom: 130%;
+    overflow: hidden;
+    position: relative;
 }
 
 .individual-product img {
 	width: 100%;
-	max-height: 80vh;
-	object-fit: cover;
+	position:absolute;
 }
 
 .individual-product-info {
 	padding: 0 20px;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
+	margin-top: 30px;
 }
 
 .individual-product-info h4 {
@@ -798,7 +800,6 @@ input[type="text"]::placeholder {
 
 .select-selected:after {
 	position: absolute;
-	top: 14px;
 	right: 10px;
 	width: 0;
 	height: 0;

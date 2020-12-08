@@ -90,7 +90,7 @@ $(function() {
 
 
     $(window).on("scroll", function() {
-        if($(window).scrollTop() < 90) {
+        if($(window).scrollTop() < 45) {
             $(".product-buttons").addClass("fixed-product-buttons");
         } else {
             $(".product-buttons").removeClass("fixed-product-buttons");

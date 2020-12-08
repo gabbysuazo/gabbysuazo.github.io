@@ -113,6 +113,22 @@ p {
 	justify-content: center;
 }
 
+.secondary-header {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    height: 16.53333vw;
+	display: flex;
+	flex-direction: column;
+	z-index: 1000;
+	background-color: #fff;
+	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
 /*===================================
 
 	Hamburger Menu
@@ -146,7 +162,7 @@ p {
     -webkit-font-smoothing: antialiased;
     transform-origin: 0 100%;
     transform: translate(0, -100%);
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 #close-menu {
@@ -199,7 +215,7 @@ p {
 ===================================*/
 
 #desktop-menu {
-	position: absolute;
+	position: fixed;
 	width: 400px;
 	height: 100vh;
     background-color: #ffffff;
@@ -208,7 +224,11 @@ p {
     transform-origin: 0 0;
     transform: translate(-100%, 0);
 	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+	z-index: 10000;
 	display: none;
+	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
 }
 
 #desktop-close-menu {
@@ -592,6 +612,49 @@ input[type="text"]::placeholder {
 ===================================*/
 /*===================================
 
+	Products Page
+
+===================================*/
+
+.products-container {
+	margin-top: 19.53333vw;
+	margin-bottom: 3.33333vw;
+	text-transform: lowercase;
+}
+
+.products-all {
+	width: calc(100% - 5.33333vw);
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.products-single {
+	width: calc(50% - 5.33333vw);
+    padding: 2.66667vw;
+}
+
+.products-single a {
+	text-decoration: none;
+	color: #000000;
+}
+
+.products-single figure {
+	width: 100%;
+}
+
+.products-single img {
+	width: 100%;
+}
+
+/*===================================
+
+	Products Page
+
+===================================*/
+/*===================================
+
 	Body
 
 ===================================*/
@@ -606,6 +669,23 @@ input[type="text"]::placeholder {
 
 /*===================================
 
+	Min-Width: 560px
+
+===================================*/
+
+@media (min-width: 560px) {
+	.products-single {
+		padding: 0.78125vw;
+		width: calc(25% - 1.5625vw);
+	}
+}
+/*===================================
+
+	Min-Width: 560px
+
+===================================*/
+/*===================================
+
 	Min-Width: 620px
 
 ===================================*/
@@ -617,7 +697,7 @@ input[type="text"]::placeholder {
 	h3 {
 		font-size: 1.6rem;
 	}
-	.header {
+	.header, .secondary-header {
 		height: 7vw;
 	}
 	.footer-container {
@@ -625,6 +705,9 @@ input[type="text"]::placeholder {
 	}
 	.hero-heading h1 {
 		margin-bottom: 20px;
+	}
+	.products-container {
+		margin-top: 9vw;
 	}
 }
 /*===================================
@@ -687,7 +770,7 @@ input[type="text"]::placeholder {
 	p {
 		font-size: 1rem;
 	}
-	.header {
+	.header, .secondary-header {
 		height: 5.83125vw;
 	}
 	.footer-container {
@@ -724,6 +807,9 @@ input[type="text"]::placeholder {
 	.about-lusid p {
 		text-align: center;
 	}
+	.products-container {
+		margin-top: 8vw;
+	}
 }
 
 /*===================================
@@ -747,11 +833,14 @@ input[type="text"]::placeholder {
 	p {
 		font-size: 1.1rem;
 	}
-	.header {
+	.header, .secondary-header {
 		height: 4.54167vw;
 	}
 	.footer-container {
 		height: 3.54167vw;
+	}
+	.products-container {
+		margin-top: 6.8vw;
 	}
 }
 

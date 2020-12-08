@@ -3,8 +3,8 @@ $(function() {
     $(window).on("scroll", function() {
         if($(window).scrollTop() > 50) {
             $(".header").addClass("active");
-            $("g").addClass("black-stroke");
-            $("line").addClass("black-stroke");
+            $(".g").addClass("black-stroke");
+            $(".line").addClass("black-stroke");
             $("#black-fill").addClass("black-fill");
             $("#black-stroke").addClass("black-stroke");
             $("#header-eye").attr("src", "images/lusid-eye-black.svg");
@@ -14,8 +14,8 @@ $(function() {
         } else {
             //remove the background property so it comes transparent again (defined in your css)
            $(".header").removeClass("active");
-           $("g").removeClass("black-stroke");
-           $("line").removeClass("black-stroke");
+           $(".g").removeClass("black-stroke");
+           $(".line").removeClass("black-stroke");
            $("#black-fill").removeClass("black-fill");
            $("#black-stroke").removeClass("black-stroke");
            $("#header-eye").attr("src", "images/lusid-eye.svg");
@@ -27,6 +27,9 @@ $(function() {
 
     $(document).on("click", function() {
         if ($('#menu-checkbox').prop('checked') == true) {
+
+            $("#menu").addClass("active");
+
             $('#menu').css({
                 '-webkit-transform' : 'translate(0, 0)',
                 '-moz-transform'    : 'translate(0, 0)',
@@ -35,6 +38,10 @@ $(function() {
                 'transform'         : 'translate(0, 0)'
             })
         } if ($('#menu-checkbox').prop('checked') == false) {
+
+            $("#menu").removeClass("active");
+
+
             $('#menu').css({
                 '-webkit-transform' : 'translate(0, -100%)',
                 '-moz-transform'    : 'translate(0, -100%)',

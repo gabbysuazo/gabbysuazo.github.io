@@ -13,6 +13,9 @@ body {
     font-family: 'Avenir', 'Urbanist', sans-serif;
 	color: #000000;
 	padding-bottom: 14.33333vw;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
 
 /*===================================
@@ -55,6 +58,14 @@ h1 {
 
 h3 {
 	font-family: 'Urbanist Bold';
+}
+
+h4 {
+	font-size: 1.2em;
+}
+
+h5 {
+	font-family: 'Urbanist';
 }
 
 h6 {
@@ -661,6 +672,180 @@ input[type="text"]::placeholder {
 /*===================================
 
 	Products Page
+
+===================================*/
+/*===================================
+
+	Product Details Page
+
+===================================*/
+
+.individual-product-container {
+	flex: 1;
+}
+
+.individual-product figure {
+	width: 100%;
+	margin-bottom: 12px;
+}
+
+.individual-product img {
+	width: 100%;
+	max-height: 80vh;
+	object-fit: cover;
+}
+
+.individual-product-info {
+	padding: 0 20px;
+	margin-bottom: 30px;
+}
+
+.individual-product-info h4 {
+	font-family: 'Urbanist';
+}
+
+.individual-product-info h5 {
+	font-family: 'Avenir';
+	font-size: 1em;
+	margin-top: 8px;
+	color: rgba(0,0,0,0.6);
+}
+
+.individual-product-info p {
+	margin-top: 20px;
+}
+
+.product-buttons {
+	width: 100%;
+	position: relative;
+	z-index: 1000;
+}
+
+.fixed-product-buttons {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+	left: 0;
+}
+
+.product-options {
+    display: flex;
+    background-color: #EDEDED;
+    height: 12.8vw;
+	font-size: 0.8em;
+}
+
+.product-color, .product-size {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	align-self: center;
+}
+
+.add-to-cart-button {
+	font-family: 'Urbanist';
+	letter-spacing: 2px;
+	height: 12.8vw;
+	font-size: 0.7em;
+	text-transform: uppercase;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.extra-products {
+	margin-top: 30px;
+}
+
+.extra-products-heading {
+	margin-bottom: 15px;
+	font-family: 'Urbanist Bold';
+	font-size: 1em;
+}
+
+/*===================================
+
+	Size Dropdown
+
+===================================*/
+
+.custom-select {
+	width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.custom-select select {
+	display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+	width: 100%;
+}
+
+.select-selected:before {
+	content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #e0e0e0; 
+}
+
+.select-selected:after {
+	position: absolute;
+	top: 14px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	content: '>';
+	font: 17px "Consolas", monospace;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.select-selected.select-arrow-active:after {
+	content: '<';
+}
+
+.select-items div,.select-selected {
+	padding: 8px 16px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.select-items {
+    width: 50vw;
+    position: absolute;
+    bottom: 100%;
+	background-color: #ffffff;
+	-webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+.select-hide {
+	display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*===================================
+
+	Size Dropdown
+
+===================================*/
+/*===================================
+
+	Product Details Page
 
 ===================================*/
 /*===================================

@@ -622,7 +622,7 @@ input[type="text"]::placeholder {
 ===================================*/
 
 .products-container {
-	margin-top: 19.53333vw;
+	padding-top: 19.53333vw;
 	margin-bottom: 3.33333vw;
 	text-transform: lowercase;
 }
@@ -699,7 +699,7 @@ input[type="text"]::placeholder {
 		margin-bottom: 20px;
 	}
 	.products-container {
-		margin-top: 9vw;
+		padding-top: 9vw;
 	}
 }
 /*===================================
@@ -813,7 +813,7 @@ input[type="text"]::placeholder {
 		text-align: center;
 	}
 	.products-container {
-		margin-top: 6.5vw;
+		padding-top: 6.5vw;
 	}
 	.products-single {
 		padding: 0.78125vw;
@@ -858,7 +858,7 @@ input[type="text"]::placeholder {
 		height: 3.54167vw;
 	}
 	.products-container {
-		margin-top: 5.4vw;
+		padding-top: 5.4vw;
 	}
 
 	.products-single {

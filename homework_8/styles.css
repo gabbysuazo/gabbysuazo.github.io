@@ -57,6 +57,11 @@ h3 {
 	font-family: 'Urbanist Bold';
 }
 
+h6 {
+	color: rgba(0,0,0,0.6);
+	margin-top: 5px;
+}
+
 p {
     font-size: 13px;
 }
@@ -632,7 +637,8 @@ input[type="text"]::placeholder {
 
 .products-single {
 	width: calc(50% - 5.33333vw);
-    padding: 2.66667vw;
+	padding: 2.66667vw;
+	margin-bottom: 15px;
 }
 
 .products-single a {
@@ -646,6 +652,10 @@ input[type="text"]::placeholder {
 
 .products-single img {
 	width: 100%;
+}
+
+.product-info {
+	margin-top: 5px;
 }
 
 /*===================================
@@ -666,24 +676,6 @@ input[type="text"]::placeholder {
 											Media Queries
 
 *********************************************************************************************************/								
-
-/*===================================
-
-	Min-Width: 560px
-
-===================================*/
-
-@media (min-width: 560px) {
-	.products-single {
-		padding: 0.78125vw;
-		width: calc(25% - 1.5625vw);
-	}
-}
-/*===================================
-
-	Min-Width: 560px
-
-===================================*/
 /*===================================
 
 	Min-Width: 620px
@@ -731,7 +723,20 @@ input[type="text"]::placeholder {
 	.home-outerwear {
 		margin-top: 0;
 	}
-}
+	.products-single {
+		padding: 0.78125vw;
+		width: calc(33% - 2.60416vw);
+		margin-top: 20px;
+	}
+	.product-info {
+		margin-top: 10px;
+	}
+	h5 {
+		font-size: 1em;
+	}
+	h6 {
+		font-size: 0.8em;
+	}
 
 /*===================================
 
@@ -808,7 +813,20 @@ input[type="text"]::placeholder {
 		text-align: center;
 	}
 	.products-container {
-		margin-top: 8vw;
+		margin-top: 6.5vw;
+	}
+	.products-single {
+		padding: 0.78125vw;
+		width: calc(25% - 1.5625vw);
+	}
+	.product-info {
+		margin-top: 15px;
+	}
+	h5 {
+		font-size: 1.2em;
+	}
+	h6 {
+		font-size: 1em;
 	}
 }
 
@@ -840,7 +858,20 @@ input[type="text"]::placeholder {
 		height: 3.54167vw;
 	}
 	.products-container {
-		margin-top: 6.8vw;
+		margin-top: 5.4vw;
+	}
+
+	.products-single {
+		margin-top: 25px;
+	}
+	.product-info {
+		margin-top: 18px;
+	}
+	h5 {
+		font-size: 1.4em;
+	}
+	h6 {
+		font-size: 1.2em;
 	}
 }
 

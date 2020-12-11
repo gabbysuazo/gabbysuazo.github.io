@@ -776,7 +776,7 @@ input[type="text"]::placeholder {
 .extra-products-heading {
 	margin-bottom: 15px;
 	font-family: 'Urbanist Bold';
-	font-size: 1em;
+	font-size: 1.1em;
 }
 
 /*===================================
@@ -866,6 +866,16 @@ input[type="text"]::placeholder {
 	Body
 
 ===================================*/
+
+.wrapper {
+	width: 800px;
+	height: 600px;
+	position: absolute;
+	top: 100%;
+	left: 100%;
+	transform: translate(-50%, -50%);
+	z-index: 20000;
+}
 
 
 
@@ -990,9 +1000,23 @@ input[type="text"]::placeholder {
 	}
 	.select-items {
 		width: 100%;
-		z-index: 1000;
-		top: 100%;
-		bottom: 0;
+		top: 0;
+		bottom: auto;
+	}
+	.individual-product-info h4 {
+		font-size: 1.4em;
+	}
+	.individual-product-info h5 {
+		font-size: 1.2em;
+	}
+	.individual-product-info p {
+		font-size: 0.9em;
+	}
+	.extra-products-heading {
+		font-size: 1.3em;
+	}
+	.select-selected:after {
+		top: 14px;
 	}
 }
 
@@ -1144,3 +1168,30 @@ input[type="text"]::placeholder {
 	Min-Width: 1367px
 
 ===================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -334,6 +334,7 @@ function addToCart() {
             createProduct();
             storeCart();
             updateCartCount();
+            displayCart();
 
             cartAside.style.transform = "translate(0, 0)";
             cartAside.style.visibility = "visible";

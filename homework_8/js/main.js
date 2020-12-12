@@ -338,6 +338,7 @@ function addToCart() {
 
             cartAside.style.transform = "translate(0, 0)";
             cartAside.style.visibility = "visible";
+            document.body.style.overflow = "hidden";
         });
     }
 }

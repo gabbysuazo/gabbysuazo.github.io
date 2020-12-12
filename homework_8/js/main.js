@@ -24,6 +24,8 @@ $(function() {
         }
     });
 
+    /******************************************************************************************/
+
     // Menu Nav Mobile
     $(document).on("click", function() {
         if ($('#menu-checkbox').prop('checked') == true) {
@@ -54,6 +56,8 @@ $(function() {
         }
     });
 
+    /******************************************************************************************/
+
     // Menu Nav Desktop
     $(document).on("click", function() {
         if ($('#menu-checkbox').prop('checked') == true) {
@@ -77,6 +81,8 @@ $(function() {
         }
     });
 
+    /******************************************************************************************/
+
     // Close Menu Nav
     $("#close-menu").on("click", function() {
         $('#menu-checkbox').prop('checked', false);
@@ -90,6 +96,8 @@ $(function() {
         event.stopPropagation();
     });
 
+    /******************************************************************************************/
+
     // Fixed Product Option Buttons
     $(window).on("scroll", function() {
         if($(window).scrollTop() > 200) {
@@ -99,6 +107,8 @@ $(function() {
         }
     });
 
+    /******************************************************************************************/
+
     // Splashscreen Auto Slideshow
     $(document).ready(function() { 
         setInterval(function(){ 
@@ -106,11 +116,28 @@ $(function() {
         }, 3000); 
     });
 
-    $('#enter-button').on("click", function() {
-        
+    $(document).ready(function(){
+
+        if (sessionStorage.getItem('splash') !== 'true') {
+            $('#splashscreen').show();
+
+            $('#enter-button').click(function() { 
+                $('#splashscreen').fadeOut(2000);
+                $('#home').css({
+                    overflow: 'auto',
+                });
+                sessionStorage.setItem('splash','true');
+                $(".slidenav__item--next").stop();
+            });
+        }
+        else {
+            $('#splashscreen').hide();
+            $('#home').fadeIn();
+        }    
     });
 });
 
+/******************************************************************************************/
 
 // Size Dropdown
 var x, i, j, l, ll, selElmnt, a, b, c;
@@ -169,7 +196,6 @@ for (i = 0; i < l; i++) {
     });
 }
 
-
 function closeAllSelect(elmnt) {
     var x, y, i, xl, yl, arrNo = [];
     x = document.getElementsByClassName("select-items");
@@ -191,3 +217,181 @@ function closeAllSelect(elmnt) {
         }
     }
 }
+
+/******************************************************************************************/
+
+// Cart Functionality
+let cart = localStorage.getItem("cart");
+cart = cart ? JSON.parse(cart) : [];
+
+updateCartCount();
+addToCart();
+
+let cartContainer = document.getElementsByClassName(".cart-items")[0];
+
+if (document.querySelector(".cart-items")) {
+  displayCart();
+}
+
+if (document.getElementById("qty")) {
+  manageQty();
+}
+
+
+// Add Products to Cart
+function addToCart() {
+  let cartClick = document.getElementById("id");
+  let cartAside = document.querySelector("#cart-container");
+
+  if (cartClick) {
+    cartClick.addEventListener("click", () => {
+      createProduct();
+      storeCart();
+      updateCartCount();
+
+      cartAside.style.transform = "translate(0, 0)";
+      cartAside.style.visibility = "visible";
+    });
+  }
+}
+
+
+// Increase # of Items in Cart
+function cartCount() {
+  let cartCount = 0;
+  let cartItems = localStorage.getItem("cart");
+
+  if (!cartItems) {
+    return cartCount;
+  }
+
+  cartItems = JSON.parse(cartItems);
+  cartItems.forEach((item) => {
+    cartCount = item.qty + cartCount;
+  });
+
+  return cartCount;
+}
+
+function updateCartCount() {
+  let cartNum = cartCount();
+  document.getElementById("update-cart").innerHTML = `(${cartNum})`;
+}
+
+
+// Put Cart Into Local Storage
+function storeCart() {
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+
+// Create Product
+class Product {
+  constructor(title, price, color, size, id) {
+    this.title = title;
+    this.price = price;
+    this.color = color;
+    this.size = size;
+    this.id = id;
+  }
+}
+
+function createProduct() {
+    let title = document.getElementById("title").innerHTML;
+
+    let price = document.getElementById("price").innerHTML;
+
+    let color = document.querySelector('#color');
+    color = color.options[color.selectedIndex].value;
+
+    let size = document.querySelector('#size');
+    size = size.options[size.selectedIndex].value;
+
+    let id = document.getElementById('id').dataset.id;
+
+    let clothing = new Product(title, price, color, size, id);
+
+    cart.push(clothing);
+}
+
+
+// Remove Items from Cart
+function removeItem() {
+    let removeButton = document.querySelectorAll(".remove-item");
+
+    removeButton.forEach((element, index) => {
+        element.addEventListener("click", () => {
+        cart.splice(index, 1);
+        storeCart();
+        });
+    });
+}
+
+
+// Display Products In Cart
+function displayCart() {
+  let cartItems = localStorage.getItem("cart");
+  cartItems = JSON.parse(cartItems);
+  let cartContainer = document.querySelector(".cart-items");
+  let cartCheckout = document.querySelector(".cart-buttons");
+
+  if (cartItems && cartContainer) {
+    cartContainer.innerHTML = ``;
+    cartCheckout.innerHTML = ``;
+
+    Object.values(cartItems).map((item, index) => {
+        cartContainer.innerHTML += `
+            <div class="single-item">
+                <div class="item-image">
+                    <a href="product-${item.id}.html">
+                        <figure>
+                            <img src="images/products/product-${item.id}.jpg" title="${item.title}" alt="${item.title}">
+                        </figure>
+                    </a>
+                </div>
+                <div class="item-info">
+                    <div class="item-name">
+                        <a href="${item.title}.html">
+                            <p>${item.title}</p>
+                        </a>
+                    </div>
+                    <div class="item-options">
+                        <p>${item.color}</p>
+                        <p class="item-options-divider">/</p>
+                        <p>${item.size}</p>
+                    </div>      
+                </div>
+                <div class="item-cost">
+                    <p>${item.price}</p>
+                    <p class="remove-item">Remove</p>
+                </div>
+            </div>
+        `;
+    });
+
+    cartCheckout.innerHTML += `
+        <div class="checkout-button">
+            <p>checkout</p>
+        </div>
+        <div>
+            <p>continue shopping</p>
+        </div>
+    `;
+
+    // Update Subtotal
+
+    removeItem();
+
+  } else {
+        cartContainer.innerHTML = `
+            <div class="no-cart>
+                <p>You don't have any items in your cart. 
+            </div>
+        `;
+  }
+}
+
+if (removeItem()) {
+    displayCart();
+    console.log('Removing items');
+};

@@ -9,7 +9,7 @@ html {
 	background: #fff;
 }
 
-body {
+#home {
 	overflow: hidden;
 }
 
@@ -48,6 +48,7 @@ body {
 	position: absolute;
 	z-index: 1000;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -62,18 +63,62 @@ body {
 
 .enter-website figure {
 	width: 50%;
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 
 .enter-website img {
 	width: 100%;
+	-webkit-filter: drop-shadow(2px 2px 6px #000);
+    filter: drop-shadow(2px 2px 6px #000); 
 }
 
 .enter-website h6 {
-	font-size: 1.6em;
+	font-size: 2em;
 	margin: 0;
 	color: #ffffff;
+	letter-spacing: 1px;
+	font-family: 'Urbanist Bold';
+	text-shadow: 1px 1px 6px black;
 }
+
+.enter-website-logo {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.enter-website-logo figure {
+	width: 25%;
+}
+
+.enter-website-logo img {
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.enter-website-logo figure {
+		width: 28%;
+	}
+	.enter-website h6 {
+		font-size: 2.2em;
+	}
+}
+
+@media (min-width: 1300px) {
+	.enter-website-logo {
+		top: 40px;
+		right: 40px;
+	}
+	.enter-website-logo figure {
+		width: 32%;
+	}
+	.enter-website h6 {
+		font-size: 2.4em;
+	}
+}
+
 
 /* Fade effect */
 .js .demo-5 {

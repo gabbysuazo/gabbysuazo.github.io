@@ -81,6 +81,11 @@ html {
 	text-shadow: 1px 1px 6px black;
 }
 
+.enter-website h6:hover {
+	color: #FF74D4;
+	transition: 0.2s;
+}
+
 .enter-website-logo {
 	position: absolute;
 	top: 30px;

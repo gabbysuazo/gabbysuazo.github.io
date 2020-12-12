@@ -88,11 +88,23 @@ $(function () {
         $('#menu-checkbox').prop('checked', false);
     });
 
-    $(window).click(function () {
+    // $(window).click(function () {
+    //     $('#menu-checkbox').prop('checked', false);
+    // });
+
+    $('#menu-nav').click(function (event) {
+        event.stopPropagation();
+    });
+
+    $("#desktop-close-menu").on("click", function () {
         $('#menu-checkbox').prop('checked', false);
     });
 
-    $('#menu-nav').click(function (event) {
+    // $(window).click(function () {
+    //     $('#menu-checkbox').prop('checked', false);
+    // });
+
+    $('#desktop-menu-nav').click(function (event) {
         event.stopPropagation();
     });
 
@@ -132,6 +144,9 @@ $(function () {
         else {
             $('#splashscreen').hide();
             $('#home').fadeIn();
+            $('#home').css({
+                overflow: 'auto',
+            });
         }
     });
 
@@ -146,6 +161,53 @@ $(function () {
         $('#cart-container').css({
             'transform': 'translate(0, -100%)',
             'visibility': 'hidden',
+        });
+    });
+
+    $('#menuToggle').mouseenter(function () {
+        $(this).find('path').css({
+            'stroke': "#2A9D8F",
+            'transition': '0.2s'
+        });
+    });
+    $('#menuToggle').mouseleave(function () {
+        $(this).find('path').css({
+            'stroke': "",
+            'transition': '0.2s'
+        });
+    });
+
+    $('.search').mouseenter(function () {
+        $('#Group_26191').children().css({
+            'stroke': "#2A9D8F",
+            'transition': '0.2s'
+        });
+    });
+    $('.search').mouseleave(function () {
+        $('#Group_26191').children().css({
+            'stroke': "",
+            'transition': '0.2s'
+        });
+    });
+
+    $('.shopping-bag').mouseenter(function () {
+        $('#Group_26105').children().css({
+            'stroke': "#2A9D8F",
+            'transition': '0.2s'
+        });
+        $('#Path_38').children().eq(1).css({
+            'fill': "#2A9D8F",
+            'transition': '0.2s'
+        });
+    });
+    $('.shopping-bag').mouseleave(function () {
+        $('#Group_26105').children().css({
+            'stroke': "",
+            'transition': '0.2s'
+        });
+        $('#Path_38').children().eq(1).css({
+            'fill': "",
+            'transition': '0.2s'
         });
     });
 });

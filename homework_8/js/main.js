@@ -132,6 +132,10 @@ $(function () {
         if (sessionStorage.getItem('splash') !== 'true') {
             $('#splashscreen').show();
 
+            $('#home').css({
+                overflow: 'hidden',
+            });
+
             $('#enter-button').click(function () {
                 $('#splashscreen').fadeOut(2000);
                 $('#home').css({
@@ -155,6 +159,13 @@ $(function () {
             'transform': 'translate(0, 0)',
             'visibility': 'visible'
         });
+
+        var windowWidth = $(window).width();
+        if (windowWidth < 500) {
+            $('body').css({
+                'overflow': 'hidden'
+            });
+        }
     })
 
     $('#close-cart').on("click", function () {
@@ -162,6 +173,13 @@ $(function () {
             'transform': 'translate(0, -100%)',
             'visibility': 'hidden',
         });
+
+        var windowWidth = $(window).width();
+        if (windowWidth < 500) {
+            $('body').css({
+                'overflow': ''
+            });
+        }
     });
 
     $('#menuToggle').mouseenter(function () {

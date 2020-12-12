@@ -11,7 +11,7 @@
                 "image": {
                     "fields": {
                         "file": {
-                            "url": "../images/products/top-8.jpg"
+                            "url": "images/products/top-8.jpg"
                         }
                     }
                 }
@@ -28,7 +28,7 @@
                 "image": {
                     "fields": {
                         "file": {
-                            "url": "../images/products/product-2.jpg"
+                            "url": "images/products/product-2.jpg"
                         }
                     }
                 }
@@ -45,7 +45,7 @@
                 "image": {
                     "fields": {
                         "file": {
-                            "url": "../images/products/top-5.jpg"
+                            "url": "images/products/top-5.jpg"
                         }
                     }
                 }
@@ -62,7 +62,7 @@
                 "image": {
                     "fields": {
                         "file": {
-                            "url": "../images/products/outerwear-8.jpg"
+                            "url": "images/products/outerwear-8.jpg"
                         }
                     }
                 }
@@ -79,7 +79,7 @@
                 "image": {
                     "fields": {
                         "file": {
-                            "url": "../images/products/bottoms-1.jpg"
+                            "url": "images/products/bottoms-1.jpg"
                         }
                     }
                 }
@@ -96,7 +96,7 @@
                 "image": {
                     "fields": {
                         "file": {
-                            "url": "../images/products/top-1.jpg"
+                            "url": "images/products/top-1.jpg"
                         }
                     }
                 }
@@ -113,7 +113,7 @@
                 "image": {
                     "fields": {
                         "file": {
-                            "url": "../images/products/outerwear-5.jpg"
+                            "url": "images/products/outerwear-5.jpg"
                         }
                     }
                 }
@@ -130,7 +130,7 @@
                 "image": {
                     "fields": {
                         "file": {
-                            "url": "../images/products/top-7.jpg"
+                            "url": "images/products/top-7.jpg"
                         }
                     }
                 }
@@ -147,7 +147,7 @@
                 "image": {
                     "fields": {
                         "file": {
-                            "url": "../images/man-jacket.jpg"
+                            "url": "images/man-jacket.jpg"
                         }
                     }
                 }
@@ -164,7 +164,7 @@
                 "image": {
                     "fields": {
                         "file": {
-                            "url": "../images/products/top-9.jpg"
+                            "url": "images/products/top-9.jpg"
                         }
                     }
                 }
@@ -181,7 +181,7 @@
                 "image": {
                     "fields": {
                         "file": {
-                            "url": "../images/products/outerwear-15.jpg"
+                            "url": "images/products/outerwear-15.jpg"
                         }
                     }
                 }
@@ -198,7 +198,7 @@
                 "image": {
                     "fields": {
                         "file": {
-                            "url": "../images/man-shoe.jpg"
+                            "url": "images/man-shoe.jpg"
                         }
                     }
                 }

@@ -420,13 +420,11 @@ updateSubtotal();
 // Update Cart on "Add to Cart" Click
 let cartClick = document.getElementById('id');
 
-cartClick.addEventListener("click", () => {
-    displayCart();
-    updateSubtotal();
-});
+if (cartClick) {
+    cartClick.addEventListener("click", () => {
+        displayCart();
+        updateSubtotal();
+    });
+}
 
-document.addEventListener("load", () => {
-    displayCart();
-    updateSubtotal();
-});
 

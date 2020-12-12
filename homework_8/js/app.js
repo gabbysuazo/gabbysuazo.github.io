@@ -46,7 +46,9 @@ class UI {
                 </div>
             `;
         });
-        productsDOM.innerHTML = result;
+        if (productsDOM) {
+            productsDOM.innerHTML = result;
+        }
     }
 }
 

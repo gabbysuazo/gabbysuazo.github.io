@@ -139,13 +139,13 @@ $(function () {
         $('#cart-container').css({
             'transform': 'translate(0, 0)',
             'visibility': 'visible'
-        })
+        });
     })
 
     $('#close-cart').on("click", function () {
         $('#cart-container').css({
             'transform': 'translate(0, -100%)',
-            'visibility': 'hidden'
+            'visibility': 'hidden',
         });
     });
 });
@@ -362,10 +362,14 @@ function displayCart() {
 
         cartCheckout.innerHTML += `
         <div class="checkout-button">
-            <p>checkout</p>
+            <a href="#">
+                <p>checkout</p>
+            </a>
         </div>
         <div>
-            <p>continue shopping</p>
+            <a href="products.html">
+                <p>continue shopping</p>
+            </a>
         </div>
     `;
 

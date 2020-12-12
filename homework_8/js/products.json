@@ -1,0 +1,112 @@
+{
+    "items": [
+        {
+            "sys": { "id": "1" },
+            "link": "product-1.html",
+            "fields": {
+                "title": "turtleneck",
+                "price": "40",
+                "image": { "fields": { "file": { "url": "/images/products/top-8.jpg" } } }
+            }
+        },
+        {
+            "sys": { "id": "2" },
+            "link": "product-2.html",
+            "fields": {
+                "title": "graphic tee",
+                "price": "30",
+                "image": { "fields": { "file": { "url": "/images/products/product-2.jpg" } } }
+            }
+        },
+        {
+            "sys": { "id": "3" },
+            "link": "product-3.html",
+            "fields": {
+                "title": "sweatshirt",
+                "price": "40",
+                "image": { "fields": { "file": { "url": "/images/products/top-5.jpg" } } }
+            }
+        },
+        {
+            "sys": { "id": "4" },
+            "link": "product-4.html",
+            "fields": {
+                "title": "jean jacket",
+                "price": "55",
+                "image": { "fields": { "file": { "url": "/images/products/outerwear-8.jpg" } } }
+            }
+        },
+        {
+            "sys": { "id": "5" },
+            "link": "product-5.html",
+            "fields": {
+                "title": "ripped jeans",
+                "price": "60",
+                "image": { "fields": { "file": { "url": "/images/products/bottoms-1.jpg" } } }
+            }
+        },
+        {
+            "sys": { "id": "6" },
+            "link": "product-6.html",
+            "fields": {
+                "title": "crop top",
+                "price": "35",
+                "image": { "fields": { "file": { "url": "/images/products/top-1.jpg" } } }
+            }
+        },
+        {
+            "sys": { "id": "7" },
+            "link": "product-7.html",
+            "fields": {
+                "title": "blazer coat",
+                "price": "60",
+                "image": { "fields": { "file": { "url": "/images/products/outerwear-5.jpg" } } }
+            }
+        },
+        {
+            "sys": { "id": "8" },
+            "link": "product-8.html",
+            "fields": {
+                "title": "crop long sleeve",
+                "price": "35",
+                "image": { "fields": { "file": { "url": "/images/products/top-7.jpg" } } }
+            }
+        },
+        {
+            "sys": { "id": "9" },
+            "link": "product-9.html",
+            "fields": {
+                "title": "rain jacket",
+                "price": "55",
+                "image": { "fields": { "file": { "url": "/images/man-jacket.jpg" } } }
+            }
+        },
+        {
+            "sys": { "id": "10" },
+            "link": "product-10.html",
+            "fields": {
+                "title": "sweater",
+                "price": "60",
+                "image": { "fields": { "file": { "url": "/images/products/top-9.jpg" } } }
+            }
+        },
+        {
+            "sys": { "id": "11" },
+            "link": "product-11.html",
+            "fields": {
+                "title": "hoodie",
+                "price": "65",
+                "image": { "fields": { "file": { "url": "/images/products/outerwear-15.jpg" } } }
+            }
+        },
+        {
+            "sys": { "id": "12" },
+            "link": "product-12.html",
+            "fields": {
+                "title": "khaki pants",
+                "price": "45",
+                "image": { "fields": { "file": { "url": "/images/man-shoe.jpg" } } }
+            }
+        }
+    ]
+}

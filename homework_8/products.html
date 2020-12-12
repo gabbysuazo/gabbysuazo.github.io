@@ -156,7 +156,7 @@
 
     <aside id="cart-container">
         <div class="cart">
-            <div id="close-cart close-menu">
+            <div id="close-cart">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="18" y1="6" x2="6" y2="18"></line>
@@ -167,40 +167,16 @@
                 <div class="cart-heading">
                     <h6>shopping cart<span id="update-cart">(0)</span></h6>
                 </div>
-                <div class="cart-items">
-                    <div class="single-item">
-                        <div class="item-image">
-                            <figure>
-                                <img src="images/products/product-2.jpg" title="Graphic Tee" alt="Graphic Tee">
-                            </figure>
-                        </div>
-                        <div class="item-info">
-                            <div class="item-name">
-                                <p>graphic tee</p>
-                            </div>
-                            <div class="item-options">
-                                <p>black</p>
-                                <p class="item-options-divider">/</p>
-                                <p>medium</p>
-                            </div>
-                        </div>
-                        <div class="item-cost">
-                            <p>30$</p>
-                            <p class="remove-item">Remove</p>
-                        </div>
-                    </div>
+                <div id="cart-items">
                 </div>
             </div>
             <div class="cart-actions-container">
                 <div class="cart-actions">
                     <div class="subtotal">
                         <p class="subtotal-bold">subtotal:</p>
-                        <p class="cart-total">$30.00</p>
+                        <p id="cart-total">$0.00</p>
                     </div>
                     <div class="cart-buttons">
-                        <div class="checkout-button">
-                            <p>checkout</p>
-                        </div>
                         <div>
                             <p>continue shopping</p>
                         </div>

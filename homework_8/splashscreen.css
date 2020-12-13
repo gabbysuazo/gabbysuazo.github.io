@@ -365,6 +365,10 @@ a.demo--current {
 	z-index: 2000;
 }
 
+.slidenav svg:hover {
+	stroke: #2A9D8F;
+}
+
 .slidenav__item {
 	border: 0;
 	background: none;

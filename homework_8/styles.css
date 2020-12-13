@@ -241,7 +241,7 @@ p {
   text-decoration: none;
   font-family: "Urbanist";
   letter-spacing: 3px;
-  overflow: none;
+  overflow: auto;
 }
 
 #menu-nav a:hover {
